@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gigabyte — Мой магазин</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html" class="cart-link">🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Gigabyte</h1>
+    <p>Мощный компьютер Gigabyte для всех задач. Цена: 300,000₸</p>
+
+    <button onclick="addToCart('Gigabyte', 300000, 'Компьютеры')">Добавить Gigabyte</button>
+    <button onclick="removeFromCart('Gigabyte')">Удалить Gigabyte</button>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').then(reg => {
+        console.log("Service Worker зарегистрирован", reg);
+      }).catch(err => {
+        console.log("Service Worker ошибка: ", err);
+      });
+    }
+  </script>
+</body>
+</html>

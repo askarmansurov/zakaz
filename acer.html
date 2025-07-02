@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acer — Мой магазин</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html" class="cart-link">🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Acer</h1>
+    <p>Надёжный ноутбук Acer для работы и игр. Цена: 250,000₸</p>
+
+    <button onclick="addToCart('Acer', 250000, 'Ноутбуки')">Добавить Acer</button>
+    <button onclick="removeFromCart('Acer')">Удалить Acer</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Видеокарта — Мой магазин</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html" class="cart-link">🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Видеокарта</h1>
+    <p>Отличная RTX видеокарта для современных игр. Цена: 150,000₸</p>
+    <button onclick="addToCart('Видеокарта', 150000)">Добавить в корзину</button>
+    <button onclick="removeFromCart('Видеокарта')">Удалить из корзины</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

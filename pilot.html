@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pilot — Мой магазин</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html">Каталог</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="cart.html" class="cart-link">🛒 (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Pilot</h1>
+    <p>Функциональный Pilot для повседневных задач. Цена: 180,000₸</p>
+
+    <button onclick="addToCart('Pilot', 180000, 'Офисные')">Добавить Pilot</button>
+    <button onclick="removeFromCart('Pilot')">Удалить Pilot</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
